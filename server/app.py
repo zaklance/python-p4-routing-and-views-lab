@@ -12,7 +12,7 @@ def index():
 @app.route('/print/<stirng:param>')
 def print_string(param):
     print(param)
-    return f'<p>{param}</p>', 200
+    return f'{param}', 200
 
 @app.route('/count/<int:param>')
 def count(param):
