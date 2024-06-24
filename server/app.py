@@ -33,5 +33,5 @@ def math(num1, operation, num2):
         return str(num1 / num2), 200
     elif operation == '%':
         return str(num1 % num2), 200
-    
-    
+    else:
+        return f'Invalid operator: {operation}', 400
